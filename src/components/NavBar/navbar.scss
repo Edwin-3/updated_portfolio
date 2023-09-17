@@ -1,0 +1,32 @@
+@use '../../theme.scss' as *;
+
+.nav-bar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0rem;
+    padding-block: 16px;
+    z-index: 1000;
+    color: $light-color;
+    background-color: $bg-color;
+
+    h2{
+        font-weight: 400;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    nav {
+        display: flex;
+        gap: 3rem;
+        @include breakpoints(sm){
+            display: none;
+        }
+        @include breakpoints(md) {
+            gap: 2rem;
+        }
+    }
+}
