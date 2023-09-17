@@ -1,7 +1,6 @@
 @use '../../theme.scss' as *;
 
 header {
-    height: 100vh;
     position: relative;
     padding-top: 152px;
 
@@ -40,7 +39,7 @@ header {
         }
 
         h5 {
-            color: $light-color;
+            color: #929ba4;
             font-family: Inter;
             font-size: 18px;
             font-style: normal;
@@ -56,7 +55,6 @@ header {
 
         h1 {
             color: $light-color;
-            font-family: Inter;
             font-size: 64px;
             font-style: normal;
             font-weight: 400;

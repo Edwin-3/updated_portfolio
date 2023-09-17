@@ -1,0 +1,52 @@
+@use '../../theme.scss' as *;
+
+
+
+section {
+    margin: 120px auto;
+    // display: flex;
+    // flex-direction: column;
+
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @include breakpoints(sm) {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        max-width: auto;
+
+    }
+
+}
+
+.card {
+    max-width: 386.67px;
+    width: 100%;
+    height: 323px;
+    display: flex;
+    padding: 62px 40px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    border: 1px solid $border-color;
+    border-radius: 32px;
+    background: $linear-2;
+
+    @include breakpoints(md) {
+        padding: 62px 40px;
+
+    }
+
+    @include breakpoints(sm) {
+        padding: 16px;
+
+    }
+}
