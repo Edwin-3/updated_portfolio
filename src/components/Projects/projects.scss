@@ -1,24 +1,65 @@
 @use '../../theme.scss' as *;
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
 
-section {
-    margin: 120px auto;
-}
-
-.project-carousel {
-    display: grid;
-    grid-template-columns: repeat(minmax(350px, 1fr));
-    gap: 20px;
-    margin: 0 auto;
+.portfolio {
+    width: 100%;
     max-width: 1200px;
-    overflow-x: scroll;
-
+    margin: auto;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    padding: 2em 0;
 }
 
-.project_card{
-    width: 371px;
-    height: 383px;
-    background: $linear-2;
-    border-radius: 24px;
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
 
+    @include breakpoints(md) {
+        padding: 16px;
+
+    }
+
+    .column {
+        flex: 1;
+        min-width: calc(28% - 16px);
+        max-width: 386.66px;
+        overflow-x: scroll;
+        border-radius: 24px;
+
+        @include breakpoints(sm) {
+            min-width: 200px;
+
+        }
+
+        .content {
+            background: $linear-2;
+            padding: 8px;
+            text-align: left;
+
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+
+            h3 {
+                margin-block: 1em 0;
+                margin-left: 16px;
+            }
+
+            p {
+                margin-bottom: 40px;
+                margin-top: 4px;
+                margin-left: 16px;
+            }
+        }
+
+        .h2 {
+            margin-top: 1em;
+        }
+    }
 }

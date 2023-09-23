@@ -53,7 +53,7 @@ const Services = () => {
     return (
         <section className="container">
             <h6>Services</h6>
-            <h2>What I Do</h2>
+            <h2 className='h2'>What I Do</h2>
             <div className=" services-grid">
                 {ServiceData.map((service, index) => (
                     <div className="card" key={index}>
