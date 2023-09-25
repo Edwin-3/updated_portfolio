@@ -3,6 +3,7 @@ import Header from "./components/Header/header";
 import Navbar from "./components/NavBar/navbar";
 import Services from "./components/Services/services";
 import Project from "./components/Projects/project";
+import Resume from "./components/Resume/resume";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Services />
       <Project />
+      <Resume />
     </div>
   );
 }

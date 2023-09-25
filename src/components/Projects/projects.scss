@@ -14,19 +14,24 @@
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 16px;
+    margin-bottom: 60px;
 
     @include breakpoints(md) {
         padding: 16px;
+        flex-shrink: 1;
+        flex-wrap: wrap;
 
     }
 
-    .column {
+    .content {
         flex: 1;
         min-width: calc(28% - 16px);
         max-width: 386.66px;
-        overflow-x: scroll;
+        background: $linear-2;
+        padding: 8px;
+        text-align: left;
         border-radius: 24px;
 
         @include breakpoints(sm) {
@@ -34,32 +39,25 @@
 
         }
 
-        .content {
-            background: $linear-2;
-            padding: 8px;
-            text-align: left;
 
 
-            img {
-                width: 100%;
-                border-radius: 20px;
-                object-fit: cover;
-            }
-
-            h3 {
-                margin-block: 1em 0;
-                margin-left: 16px;
-            }
-
-            p {
-                margin-bottom: 40px;
-                margin-top: 4px;
-                margin-left: 16px;
-            }
+        img {
+            width: 100%;
+            border-radius: 20px;
+            object-fit: cover;
         }
 
-        .h2 {
-            margin-top: 1em;
+        h3 {
+            margin-block: 1em 0;
+            margin-left: 16px;
+        }
+
+        p {
+            margin-bottom: 40px;
+            margin-top: 4px;
+            margin-left: 16px;
         }
     }
+
+
 }
