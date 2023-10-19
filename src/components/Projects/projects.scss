@@ -13,22 +13,20 @@
 
 .row {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
     gap: 16px;
     margin-bottom: 60px;
 
     @include breakpoints(md) {
         padding: 16px;
-        flex-shrink: 1;
-        flex-wrap: wrap;
-
     }
 
     .content {
-        flex: 1;
         min-width: calc(28% - 16px);
-        max-width: 386.66px;
+        max-width: 320px;
+        flex: 1 0 auto; // prevents the cards from stretching or shrinking
         background: $linear-2;
         padding: 8px;
         text-align: left;
@@ -36,6 +34,8 @@
 
         @include breakpoints(sm) {
             min-width: 200px;
+            max-width: 250px;
+
 
         }
 
@@ -43,6 +43,8 @@
 
         img {
             width: 100%;
+            display: block;
+            max-width: 100%;
             border-radius: 20px;
             object-fit: cover;
         }

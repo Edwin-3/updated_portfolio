@@ -8,10 +8,10 @@ const Navbar = () => {
                 <h2>Edwin Mutua</h2>
             </a>
             <nav>
-                <a href='/#about' >About</a>
-                <a href='/#portfolio' >Work</a>
+                <a href='#about' >About</a>
+                <a href='#work' >Work</a>
                 <a href='#contact'>Contact</a>
-                <a href='' download>Resume</a>
+                <a href='#resume'>Resume</a>
             </nav>
             <button className='btn'>Let's Talk</button>
 

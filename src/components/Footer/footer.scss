@@ -1,0 +1,87 @@
+@use '../../theme.scss' as *;
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+
+    .title {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            text-align: center;
+            font-size: 3rem;
+
+            @include breakpoints(sm) {
+                font-size: 1.5rem;
+
+            }
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            margin-top: 48px;
+
+
+            .icon-wrapper {
+                display: flex;
+                width: 60px;
+                height: 60px;
+                padding: 10px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 16px;
+                border: 1px solid $border-color;
+                cursor: pointer;
+                transition: $transition;
+
+                &:hover {
+                    background-color: $border-color;
+
+                    svg {
+                        color: $bg-color;
+                        font-size: 24px;
+
+                    }
+                }
+            }
+
+            svg {
+                font-size: 24px;
+                color: #868E96;
+
+            }
+        }
+    }
+
+    .logo {
+        margin-bottom: 2rem;
+        margin-inline: auto;
+        width: 30%;
+        padding: 10px 0;
+        border-top: 1px solid $border-color;
+        text-align: center;
+
+        @include breakpoints(sm) {
+            width: 100%;
+        }
+    }
+
+    .nav {
+        margin: 0 auto 3rem;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+
+        @include breakpoints(sm) {
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@use '../../theme.scss' as *;
+
+#testimonials {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.testimony-wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    margin-bottom: 60px;
+
+    @include breakpoints(md) {
+        padding: 16px;
+    }
+
+
+
+    .content {
+        flex: 1 0 auto;
+        min-width: calc(28% - 16px);
+        max-width: 320px;
+        background: $linear-2;
+        padding: 2.5rem;
+        text-align: left;
+        border: 1px solid $border-color;
+        border-radius: 24px;
+
+        @include breakpoints(sm) {
+            min-width: 200px;
+            max-width: 250px;
+            padding: 2.5rem 1rem;
+
+        }
+
+        .text {
+            margin-block: 24px;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 30px;
+
+        }
+    }
+}

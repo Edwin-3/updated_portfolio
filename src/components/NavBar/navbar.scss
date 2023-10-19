@@ -12,7 +12,15 @@
     color: $light-color;
     background-color: $bg-color;
 
-    h2{
+    .logo {
+        h2 {
+            @include breakpoints(sm) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    h2 {
         font-weight: 400;
         letter-spacing: 0.09em;
         text-transform: uppercase;
@@ -22,9 +30,11 @@
     nav {
         display: flex;
         gap: 3rem;
-        @include breakpoints(sm){
+
+        @include breakpoints(sm) {
             display: none;
         }
+
         @include breakpoints(md) {
             gap: 2rem;
         }

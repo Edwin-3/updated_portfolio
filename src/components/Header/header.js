@@ -7,7 +7,7 @@ import heroImg from '../../assets/Headerimg.png'
 
 const Header = () => {
   return (
-    <header>
+    <header className='container'>
       <div className='header_container'>
         <div className='header_content'>
           <h5>UI/UX Designer</h5>
