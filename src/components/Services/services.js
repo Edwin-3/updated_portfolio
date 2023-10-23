@@ -51,7 +51,7 @@ const ServiceData = [
 const Services = () => {
 
     return (
-        <section className="container" id="about">
+        <section className="container" id="services">
             <h6>Services</h6>
             <h2 className='h2'>What I Do</h2>
             <div className=" services-grid">

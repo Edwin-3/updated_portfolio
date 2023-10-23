@@ -1,22 +1,43 @@
-import React from 'react'
-import './navbar.scss'
+import React, { useState, useEffect, useRef } from 'react';
+import './navbar.scss';
+import { FaBars } from 'react-icons/fa';
 
-const Navbar = () => {
+const Nav = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const navLinksRef = useRef(null);
+
+    const handleToggle = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const handleClickOutside = (event) => {
+        if (navLinksRef.current && !navLinksRef.current.contains(event.target)) {
+            setIsOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     return (
-        <div className='container nav-bar'>
-            <a href='/' className='logo'>
-                <h2>Edwin Mutua</h2>
-            </a>
-            <nav>
-                <a href='#about' >About</a>
-                <a href='#work' >Work</a>
-                <a href='#contact'>Contact</a>
-                <a href='#resume'>Resume</a>
-            </nav>
-            <button className='btn'>Let's Talk</button>
+        <nav className="navbar">
+            <div className="logo">Edwin Mutua</div>
+            <div ref={navLinksRef} className={isOpen ? "nav-links active" : "nav-links"}>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button className="btn">Contact Me</button>
+            <div className="hamburger" onClick={handleToggle}>
+                <FaBars />
+            </div>
+        </nav>
+    );
+};
 
-        </div>
-    )
-}
-
-export default Navbar
+export default Nav;

@@ -8,7 +8,7 @@ import '../Header/header.scss'
 
 const Footer = () => {
   return (
-    <section className='container footer'>
+    <section className='container footer' id='contact'>
       <div className='title'>
         <p>Have a custom design? </p>
         <p>let’s talk?</p>

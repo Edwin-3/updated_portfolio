@@ -7,11 +7,16 @@ import heroImg from '../../assets/Headerimg.png'
 
 const Header = () => {
   return (
-    <header className='container'>
+    <header className='container' id='home'>
       <div className='header_container'>
         <div className='header_content'>
           <h5>UI/UX Designer</h5>
-          <h1>Hi, I'm Edwin</h1>
+          <span className='stack'>
+            <span className="--index-0"><h1>Hi, I'm Edwin</h1></span>
+            <span className="--index-1"><h1>Hi, I'm Edwin</h1></span>
+            <span className="--index-2"><h1>Hi, I'm Edwin</h1></span>
+          </span>
+
           <p>A creative UI/UX Designer with a focus on crafting engaging,
             intuitive user experiences. Over 8 years of experience,
             collaborating with diverse teams to create user-centered solutions

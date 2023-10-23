@@ -1,42 +1,82 @@
 @use '../../theme.scss' as *;
 
-.nav-bar {
-    width: 100%;
-    position: fixed;
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0rem;
-    padding-block: 16px;
-    z-index: 1000;
-    color: $light-color;
+    padding: 10px;
     background-color: $bg-color;
+    color: $text-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+    border-bottom: 1px solid $border-color;
+
 
     .logo {
-        h2 {
-            @include breakpoints(sm) {
-                font-size: 1rem;
-            }
-        }
+        font-size: 1.5em;
     }
 
-    h2 {
-        font-weight: 400;
-        letter-spacing: 0.09em;
-        text-transform: uppercase;
-        white-space: nowrap;
-    }
-
-    nav {
+    .nav-links {
         display: flex;
         gap: 3rem;
 
-        @include breakpoints(sm) {
+        a {
+            text-decoration: none;
+            color: $text-color;
+            ;
+        }
+    }
+
+    .hamburger {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
             display: none;
+            flex-direction: column;
+
+            &.active {
+                display: flex;
+                position: absolute;
+                align-items: center;
+                gap: 0;
+                top: 52px;
+                right: 0px;
+                width: 50%;
+                background-color: $bg-color;
+                z-index: 99999999999;
+                border-end-start-radius: 1rem;
+                border: 1px solid $border-color;
+
+                a {
+                    display: block;
+                    text-align: center;
+                    padding-block: 14.2px;
+                    width: 100%;
+                    border-bottom: 0.1px solid $border-color;
+
+                    &:last-child {
+                        border-bottom: none;
+
+                    }
+                }
+
+            }
         }
 
-        @include breakpoints(md) {
-            gap: 2rem;
+        .btn {
+            display: none;
+
+            &.active {
+                display: block;
+            }
         }
     }
 }
