@@ -10,40 +10,40 @@ import svg5 from '../../assets/SVG (4).svg'
 const ServiceData = [
     {
         iconPath: svg1,
-        title: "Service 1",
+        title: "Odoo ERP Development",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar semper magna sit amet commodo."
+            "Provide Odoo ERP expertise to streamline processes, enhance efficiency, and develop custom modules."
     },
     {
         iconPath: svg2,
-        title: "Service 2",
+        title: "Custom UI/UX Design",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar semper magna sit amet commodo."
+            "Craft user-centric Figma designs through wireframing, prototyping, and delivering tailored high-fidelity solutions"
     },
     {
         iconPath: svg3,
-        title: "Service 2",
+        title: "Web Development",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar semper magna sit amet commodo."
+            "Develop scalable ReactJS apps with reusable components for optimized, seamless user experience."
     },
     {
         iconPath: svg4,
-        title: "Service 3",
+        title: "Mobile App Development",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar semper magna sit amet commodo."
+            "Create cross-platform, high-performance mobile apps with Flutter, optimizing time and costs."
     },
 
     {
         iconPath: svg5,
-        title: "Service 4",
+        title: "Responsive Web Development",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar semper magna sit amet commodo."
+            "Create responsive, mobile-friendly websites for a seamless user experience across all devices."
     },
     {
         iconPath: svg5,
-        title: "Service 6",
+        title: "Ecommerce Services",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar semper magna sit amet commodo."
+            "Develop seamless WooCommerce platforms to elevate online sales, shopping experience and enrich customer engagement."
     },
 ]
 

@@ -19,9 +19,15 @@
     -webkit-overflow-scrolling: touch;
     gap: 16px;
     margin-bottom: 60px;
+    width: 1200px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     @include breakpoints(md) {
         padding: 16px;
+        width: 100%;
     }
 
     .content {

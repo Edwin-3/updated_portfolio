@@ -5,9 +5,9 @@ import img02 from '../../assets/projo2.jpg';
 import img03 from '../../assets/projo3.jpg';
 
 const projectData = [
-    { image: img01, title: 'Web Design', description: 'Travel App Web Design' },
-    { image: img02, title: 'Web Design', description: 'Travel App Web Design' },
-    { image: img03, title: 'Web Design', description: 'Travel App Web Design' }
+    { image: img01, title: 'Web Extension Design', description: 'Zenflow Extension' },
+    { image: img02, title: 'Web Development', description: 'Travel App Web Design' },
+    { image: img03, title: 'Mobile App Dev', description: 'Anitrack Mobile App' }
 ];
 
 const Project = () => {

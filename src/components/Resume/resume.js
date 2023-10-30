@@ -3,18 +3,24 @@ import './resume.scss'
 
 const experienceData = [
     {
-        title: 'UI/UX Designer & Trainer', location: 'Kenya', duration: 'Comido Out Tech - (2020 - Present)',
-        description: 'Partnered with cross-functional teams to craft user-centric solutions for web and mobile apps.Guided UI design, producing captivating interfaces that reflect brand guidelines. Employed user research to drive seamless implementation and informed design choices.'
+        title: 'Odoo ERP Technical Consultant', location: 'Kenya', duration: 'SoftIQ Technologies - (2021 - Present)',
+        description: ' Skilled in designing and developing custom Odoo modules tailored to client needs. Led full-cycle implementations, provided strategic consultancy, and conducted user training sessions to maximize ERP efficiency and user proficiency. Renowned for merging technical expertise with business insights to drive organizational growth and streamline processes.'
     },
     {
-        title: 'UI/UX Designer & Trainer', location: 'Kenya', duration: 'Comido Out Tech - (2020 - Present)',
-        description: 'Partnered with cross-functional teams to craft user-centric solutions for web and mobile apps.Guided UI design, producing captivating interfaces that reflect brand guidelines. Employed user research to drive seamless implementation and informed design choices.'
+        title: 'UI/UX Designer & Developer', location: 'Kenya', duration: 'Freelance - (2020 - Present)',
+        description: "I specialize in creating user-friendly websites and apps with a perfect blend of design and technology. Prioritizing user needs, my designs ensure a seamless and engaging digital experience, balancing aesthetics with functionality for optimal engagement."
     },
-    {
-        title: 'UI/UX Designer & Trainer', location: 'Kenya', duration: 'Comido Out Tech - (2020 - Present)',
-        description: 'Partnered with cross-functional teams to craft user-centric solutions for web and mobile apps.Guided UI design, producing captivating interfaces that reflect brand guidelines. Employed user research to drive seamless implementation and informed design choices.'
-    },
+]
 
+const educationData = [
+    {
+        title: 'Bachelors of Business Information Technology', location: 'Kenya', duration: 'Strathmore University - (2018 - 2022)',
+        description: 'Earned a degree emphasizing the fusion of IT and business strategies. During my studies, I acquired skills to effectively apply technology in various business scenarios, positioning myself as a bridge between technical solutions and business objectives.'
+    },
+    {
+        title: 'Kenya Certificate of Secondary Education', location: 'Kenya', duration: 'St Albert the Great Siakago Boys’ High School - (2014 - 2017)',
+        description: 'During my time at St Albert the Great, I diligently pursued and successfully attained my secondary education certificate. This foundational stage honed my academic discipline, problem-solving skills, and passion for learning, laying a strong groundwork for my future academic and professional endeavors.'
+    },
 ]
 
 const skillsData = [
@@ -68,16 +74,16 @@ const Resume = () => {
             </div>
             <div className='education'>
                 <h5>Education</h5>
-                {experienceData.map((experience, index) => (
+                {educationData.map((education, index) => (
                     <>
                         <div key={index} className='content'>
                             <div className='resume_row'>
-                                <h3>{experience.title}</h3>
-                                <p>{experience.location}</p>
+                                <h3>{education.title}</h3>
+                                <p>{education.location}</p>
                             </div>
-                            <h4>{experience.duration}</h4>
+                            <h4>{education.duration}</h4>
                             <hr />
-                            <p>{experience.description}</p>
+                            <p>{education.description}</p>
                         </div>
                         <div className='divider'></div>
                     </>

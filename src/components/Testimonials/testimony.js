@@ -3,19 +3,19 @@ import "./testimony.scss"
 
 const testimonyData = [
     {
-        text: "The UX Amadoso designed was outstanding. The interface was cool and visually appealing, and user-friendly. Highly recommended",
+        text: "Edwin transformed our digital game with intuitive designs that boosted user engagement. His deep understanding of our brand was evident in the final product.",
         author: "Sarah Johnson",
-        occupation: "App User",
+        occupation: "CEO, TechFlex Solutions",
     },
     {
-        text: "The UX Amadoso designed was outstanding. The interface was cool and visually appealing, and user-friendly. Highly recommended",
+        text: "Working with Edwin's UI/UX skills are unmatched. Our app's redesign under their guidance saw higher user retention, with rave reviews from our community.",
         author: "Sarah Johnson",
-        occupation: "App User",
+        occupation: " Product Manager, ByteCraft Inc",
     },
     {
-        text: "The UX Amadoso designed was outstanding. The interface was cool and visually appealing, and user-friendly. Highly recommended",
+        text: "His expertise gave our website both style and ease-of-use. Their dedication and collaboration made them stand out in the industry.",
         author: "Sarah Johnson",
-        occupation: "App User",
+        occupation: "Founder, SpiceWeb Innovations",
     },
 ]
 const Testimony = () => {
@@ -38,13 +38,15 @@ const Testimony = () => {
                             </defs>
                         </svg>
                         <p className='text'>{testimony.text}</p>
-                        <h3>{testimony.author}</h3>
-                        <p>{testimony.occupation}</p>
+                        <div className='person'>
+                            <h3>{testimony.author}</h3>
+                            <p className='occupation'>{testimony.occupation}</p>
+                        </div>
+
                     </div>
 
                 ))}
             </div>
-            <button className='btn'>View all projects</button>
         </section>)
 }
 

@@ -3,14 +3,15 @@
 header {
     position: relative;
     padding-top: 152px;
+    width: 100%;
 
 }
 
 .header_container {
     position: relative;
     max-width: 1200px;
-    z-index: 99;
-    margin: 0 auto;
+    // z-index: 99;
+    // margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -156,6 +157,10 @@ header {
             margin-top: 48px;
             margin-bottom: 96px;
 
+            @include breakpoints(sm) {
+                flex-wrap: wrap;
+            }
+
 
             .icon-wrapper {
                 display: flex;
@@ -168,6 +173,8 @@ header {
                 border: 1px solid $border-color;
                 cursor: pointer;
                 transition: $transition;
+
+
 
                 &:hover {
                     background-color: $border-color;
