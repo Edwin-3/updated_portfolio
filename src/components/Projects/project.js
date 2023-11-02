@@ -1,8 +1,8 @@
 import React from 'react';
 import './projects.scss';
-import img01 from '../../assets/projo1.jpg';
-import img02 from '../../assets/projo2.jpg';
-import img03 from '../../assets/projo3.jpg';
+import img01 from '../../assets/iq.jpg';
+import img02 from '../../assets/travel.jpg';
+import img03 from '../../assets/anitrack.jpg';
 
 const projectData = [
     { image: img01, title: 'Web Extension Design', description: 'Zenflow Extension' },

@@ -68,6 +68,9 @@
         padding: 10px 0;
         border-top: 1px solid $border-color;
         text-align: center;
+        color: $text-color;
+        font-family: $font-3;
+        letter-spacing: 0.09em;
 
         @include breakpoints(sm) {
             width: 100%;

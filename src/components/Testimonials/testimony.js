@@ -9,12 +9,12 @@ const testimonyData = [
     },
     {
         text: "Working with Edwin's UI/UX skills are unmatched. Our app's redesign under their guidance saw higher user retention, with rave reviews from our community.",
-        author: "Sarah Johnson",
+        author: "Robert Kaluku",
         occupation: " Product Manager, ByteCraft Inc",
     },
     {
         text: "His expertise gave our website both style and ease-of-use. Their dedication and collaboration made them stand out in the industry.",
-        author: "Sarah Johnson",
+        author: "Sophia Patel",
         occupation: "Founder, SpiceWeb Innovations",
     },
 ]
