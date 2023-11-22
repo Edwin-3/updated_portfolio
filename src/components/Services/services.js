@@ -21,13 +21,13 @@ const ServiceData = [
             "Craft user-centric Figma designs through wireframing, prototyping, and delivering tailored high-fidelity solutions"
     },
     {
-        iconPath: svg3,
+        iconPath: svg4,
         title: "Web Development",
         description:
             "Develop scalable ReactJS apps with reusable components for optimized, seamless user experience."
     },
     {
-        iconPath: svg4,
+        iconPath: svg3,
         title: "Mobile App Development",
         description:
             "Create cross-platform, high-performance mobile apps with Flutter, optimizing time and costs."

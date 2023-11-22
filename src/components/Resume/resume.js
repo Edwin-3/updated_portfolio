@@ -3,14 +3,36 @@ import './resume.scss'
 
 const experienceData = [
     {
-        title: 'Odoo ERP Technical Consultant', location: 'Kenya', duration: 'SoftIQ Technologies - (2021 - Present)',
-        description: ' Skilled in designing and developing custom Odoo modules tailored to client needs. Led full-cycle implementations, provided strategic consultancy, and conducted user training sessions to maximize ERP efficiency and user proficiency. Renowned for merging technical expertise with business insights to drive organizational growth and streamline processes.'
+        title: 'Odoo ERP Consultant', location: 'Kenya', duration: 'SoftIQ Technologies - (2021 - Present)',
+        project: "Jays Wines Distributors Ltd",
+        description: 'Led Jays Wines ERP transformation, implementing Odoo 14 and upgrading seamlessly to version 16. Provided strategic consultancy, developed custom modules, and conducted user training for enhanced efficiency.'
+    },
+    {
+        title: 'Odoo ERP Consultant', location: 'Uganda', duration: 'SoftIQ Technologies - (2021 - Present)',
+        project: "Wamo General Trading Company Ltd",
+        description: 'Empowered Wamo General with customized Odoo modules. Traveled to Uganda, provided strategic consultancy, and conducted training for CEO and team, optimizing multi-country operations in Juba, Kenya, and Uganda.'
+    },
+    {
+        title: 'Odoo ERP Consultant', location: 'Kenya', duration: 'SoftIQ Technologies - (2021 - Present)',
+        project: "Milli-ions Global Ltd",
+        description: 'Transformed Milli-ions Global with Odoo ERP, focusing on a comprehensive POS system for shops and branches. Delivered tailored solutions, training, and ongoing support, driving digital transformation.'
+    },
+    {
+        title: 'Odoo ERP Consultant', location: 'Kenya', duration: 'SoftIQ Technologies - (2021 - Present)',
+        project: "Dolphin’s Stationeries Ltd",
+        description: 'Revitalized Dolphin’s Odoo system, upgrading from version 12 to 16 before the October 31st, 2023 deadline. Developed, tested upgrade scripts, and provided user training for seamless transition and enhanced efficiency.'
+    },
+    {
+        title: 'Odoo ERP Consultant', location: 'Kenya', duration: 'SoftIQ Technologies - (2022 - 2023)',
+        project: "The Nut-Bar Ltd",
+        description: 'Led The Nut-Bar Ltd project, ensuring successful Odoo ERP implementation. Customized modules, provided strategic consultancy, and conducted user training sessions, optimizing business processes for sustained growth.'
     },
     {
         title: 'UI/UX Designer & Developer', location: 'Kenya', duration: 'Freelance - (2020 - Present)',
-        description: "I specialize in creating user-friendly websites and apps with a perfect blend of design and technology. Prioritizing user needs, my designs ensure a seamless and engaging digital experience, balancing aesthetics with functionality for optimal engagement."
+        description: "As a UI/UX designer and developer, I create user-friendly websites and apps that prioritize seamless digital experiences. Balancing aesthetics with optimal functionality, my designs aim to engage and delight users."
     },
 ]
+
 
 const educationData = [
     {
@@ -42,7 +64,7 @@ const skillsData = [
     },
     {
         name: 'Odoo ERP Implementation',
-        level: '84%',
+        level: '88%',
     },
     {
         name: 'Internet of Things',
@@ -65,6 +87,7 @@ const Resume = () => {
                             </div>
                             <h4>{experience.duration}</h4>
                             <hr />
+                            <h6>{experience.project}</h6>
                             <p>{experience.description}</p>
                         </div>
                         <div className='divider'></div>

@@ -1,9 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './navbar.scss';
 import { FaBars } from 'react-icons/fa';
+import Popup from '../Popups/popup';
+import { MdOutlineMail, MdWhatsapp } from 'react-icons/md'
+import { LuLinkedin } from 'react-icons/lu'
+import { AiOutlineInstagram } from 'react-icons/ai'
+import contactImg from '../../assets/contact.svg'
+
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [showPopup, setShowPopup] = useState(false);
     const navLinksRef = useRef(null);
 
     const handleToggle = () => {
@@ -32,10 +39,29 @@ const Nav = () => {
                 <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
             </div>
-            <button className="btn">Contact Me</button>
+            <button className="btn" onClick={() => setShowPopup(true)}>Contact Me</button>
             <div className="hamburger" onClick={handleToggle}>
                 <FaBars />
             </div>
+            <Popup trigger={showPopup} setTrigger={setShowPopup}>
+
+                <div className='form_row'>
+                    <div className='form_img'>
+                        <img src={contactImg} />
+                    </div>
+                    <div className='form_content'>
+                        <h1> Let's Talk 👇🏾</h1>
+                        <form>
+                            <input type="text" name="name" placeholder="Full Name" /><br />
+                            <input type="email" name="email" placeholder="Email Address" /><br />
+                            <textarea rows={4} placeholder="Message..."></textarea>
+                            <input type='submit' value="Submit" />
+                        </form>
+
+                    </div>
+
+                </div>
+            </Popup>
         </nav>
     );
 };

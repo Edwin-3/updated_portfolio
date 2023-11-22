@@ -18,15 +18,15 @@ const Header = () => {
           </span>
 
           <p>A creative UI/UX Designer with a focus on crafting engaging,
-            intuitive user experiences. Over 8 years of experience,
+            intuitive user experiences. Over 6 years of experience,
             collaborating with diverse teams to create user-centered solutions
             for diverse platforms and industries.
           </p>
           <div className='socials'>
-            <div className='icon-wrapper'><MdOutlineMail /></div>
-            <div className='icon-wrapper'><MdWhatsapp /></div>
-            <div className='icon-wrapper'><LuLinkedin /></div>
-            <div className='icon-wrapper'><AiOutlineInstagram /></div>
+            <div className='icon-wrapper'><a href='mailto:edwin3mutua@gmail.com'><MdOutlineMail /></a></div>
+            <div className='icon-wrapper'><a href='https://api.whatsapp.com/send?phone=+254713768558'><MdWhatsapp /></a></div>
+            <div className='icon-wrapper'><a href='https://www.linkedin.com/edwin' target='_blank'><LuLinkedin /></a></div>
+            <div className='icon-wrapper'><a href='https://www.instagram.com/edwin' target='_blank'><AiOutlineInstagram /></a></div>
           </div>
         </div>
         <div className='header_image'>
