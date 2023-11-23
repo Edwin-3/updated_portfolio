@@ -22,7 +22,8 @@ const Popup = (props) => {
         };
     }, [props]);
     return (props.trigger) ? (
-        <div className='form_wrapper'>
+        <div className='popup_wrapper'>
+            <div className='popup_backdrop' />
             <div className='form_body'>
                 <button className='close_btn' onClick={() => props.setTrigger(false)}><IoClose /></button>
                 {props.children}

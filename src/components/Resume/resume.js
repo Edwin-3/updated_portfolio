@@ -90,7 +90,7 @@ const Resume = () => {
                             <h6>{experience.project}</h6>
                             <p>{experience.description}</p>
                         </div>
-                        <div className='divider'></div>
+                        <div className='divider-vertical'></div>
                     </>
                 ))}
 
@@ -108,7 +108,7 @@ const Resume = () => {
                             <hr />
                             <p>{education.description}</p>
                         </div>
-                        <div className='divider'></div>
+                        <div className='divider-vertical'></div>
                     </>
                 ))}
 

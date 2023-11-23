@@ -47,7 +47,13 @@ const Nav = () => {
 
                 <div className='form_row'>
                     <div className='form_img'>
-                        <img src={contactImg} />
+                        <img src={contactImg} alt='contact us Img'/>
+                        <div className='socials'>
+            <div className='icon-wrapper'><a href='mailto:edwin3mutua@gmail.com'><MdOutlineMail /></a></div>
+            <div className='icon-wrapper'><a href='https://api.whatsapp.com/send?phone=+254713768558'><MdWhatsapp /></a></div>
+            <div className='icon-wrapper'><a href='https://www.linkedin.com/edwin' target='_blank' rel="noreferrer"><LuLinkedin /></a></div>
+            <div className='icon-wrapper'><a href='https://www.instagram.com/edwin' target='_blank' rel="noreferrer"><AiOutlineInstagram /></a></div>
+          </div>
                     </div>
                     <div className='form_content'>
                         <h1> Let's Talk 👇🏾</h1>

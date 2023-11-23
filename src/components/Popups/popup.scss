@@ -1,6 +1,6 @@
 @use '../../theme.scss' as *;
 
-.form_wrapper {
+.popup_wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,10 +8,23 @@
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
-
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.popup_backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust the alpha value for the desired level of transparency */
+    backdrop-filter: blur(5px);
+    /* Adjust the blur value as needed */
+    z-index: -1;
+    /* Behind the form_body */
 }
 
 .form_body {
@@ -47,11 +60,34 @@
     .form_img {
         flex: 1;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         img {
+            margin-top: 2rem;
             width: 90%;
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            margin-top: auto;
+
+            @include breakpoints(sm) {
+                flex-wrap: wrap;
+            }
+
+            svg {
+                font-size: 24px;
+                color: #868E96;
+
+                &:hover {
+                    color: $bg-color;
+
+                }
+            }
         }
     }
 
@@ -130,13 +166,17 @@
     margin: 1rem 0;
 }
 
-.design_images{
+.design_images {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 0.875rem;
+    height: auto;
 
-    img{
+    img {
         width: 150px;
+        height: auto;
+        max-height: 100%;
     }
 }

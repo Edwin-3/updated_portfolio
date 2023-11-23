@@ -115,7 +115,7 @@
     }
 
     .experience {
-        .divider {
+        .divider-vertical {
             height: 200px;
             display: block;
             width: 2px;
@@ -126,7 +126,7 @@
     }
 
     .education {
-        .divider:not(:last-child) {
+        .divider-vertical:not(:last-child) {
             height: 200px;
             display: block;
             width: 2px;
